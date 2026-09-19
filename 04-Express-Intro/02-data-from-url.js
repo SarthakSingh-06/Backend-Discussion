@@ -15,6 +15,12 @@ app.use((req, res, next) => {
     next();
 });
 
+function checkUserLogin(req, res, next) {
+    // Check user login logic
+}
+
+    app.use(checkUserLogin);
+
 app.use((req, res, next) => {
     console.log("Middleware - 2");
     next();
